@@ -10,8 +10,8 @@
 **三、執行結果過程與圖檔**
 
 執行過程影片：https://drive.google.com/file/d/1iOmb_4P8hdfWzZp_Hftx29ZLKAE8T43m/view?usp=sharing
-
+<img width="2880" height="1714" alt="image" src="https://github.com/user-attachments/assets/1f2b7b21-fcf9-48aa-88fb-98e28dea1d54" />
+<br>
 <img width="600" height="400" alt="travel" src="https://github.com/user-attachments/assets/47b70bef-6bd1-44a6-b993-56a4c08fabdf" />
-
-
+<br>
 <img width="600" height="400" alt="pet" src="https://github.com/user-attachments/assets/29e89e44-1120-4bb8-b83d-f9a335e08374" />
