@@ -1,14 +1,15 @@
-# hw2_WordCloud
-# 程式設計作業 2：自製 Hash Table 文字雲產生器
+**一、開發說明**
+本專案實作之**像素城市文字雲系統**，核心演算法結合了自然語言處理與幾何分佈邏輯。針對**中文語境**採用專業的 `jieba` 斷詞庫進行精確分詞，英文部分則實作字頻統計過濾演算法。文字配置核心採用**阿基米德螺旋演算法（Archimedean spiral）**，搭配 **AABB 碰撞偵測技術**，確保高頻詞彙能由中心向外擴散且視覺上互不重疊。
 
-## 1. 程式說明與設計理念
-本程式完全依照要求，**無使用任何內建的 dict 或 collections.Counter 函式庫**。
-資料結構部分，我自建了 `CustomHashTable` 類別，使用陣列與子陣列 (Chaining) 來處理 Hash Collision，並手寫了 Selection Sort 進行排序以防違反規定。
+**二、功能特色**
+*   **介面設計**：參考 **Isometric Pixel Art（等距視角像素畫）** 風格調色盤，以橄欖綠、機器人紅與晴空藍等高對比色系，打造具備 90 年代街機感的懷舊視覺體驗。
+*   **多語支援**：完美支援中英文混打輸入，具備自動過濾「停用詞（Stop words）」功能，能有效剔除無意義之虛詞（如：的、在、is、the），精準擷取核心關鍵字。
+*   **彈性控制**：提供使用者自訂「顯示詞數」功能，並具備一鍵清空（Clear）與剪貼簿貼上（Paste）等便捷操作。
+*   **高品質產出**：支援跨平台 PNG 圖檔匯出功能，並採用 **PostScript 數據流轉檔技術**，確保儲存的圖片純淨無雜訊且不含系統 UI 殘影。
+*   **穩定性**：針對 Mac 與 Windows 系統差異進行優化，使用自定義 Label 元件破解 Mac 系統按鈕顏色限制，確保跨平台操作之一致性。
 
-## 2. 加分項實作
-* **存成圖檔**：介面上設計了 `[SAVE EPS]` 按鈕，透過 Tkinter 的 Canvas 匯出 `.eps` 向量圖檔。
-* **Stop Words 排除**：自訂了無意義字詞清單 (如 is, a, the 等)，在讀取時自動略過。
-* **中文處理**：利用中文字的 Unicode 範圍 (\u4e00-\u9fff)，搭配 **2-gram (雙字詞) 滑動視窗演算法**，成功擷取出中文的常用兩字詞彙。
+**三、執行結果過程與圖檔**
+<img width="600" height="400" alt="travel" src="https://github.com/user-attachments/assets/47b70bef-6bd1-44a6-b993-56a4c08fabdf" />
+<img width="600" height="400" alt="pet" src="https://github.com/user-attachments/assets/29e89e44-1120-4bb8-b83d-f9a335e08374" />
 
-## 3. 圖形化介面
-使用 `tkinter` 打造，並採用深色底搭配螢光色的「復古像素風格 (Pixel Art)」，字體統一使用 Courier 呈現點陣科技感。
+
