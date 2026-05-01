@@ -9,6 +9,7 @@
 *   **穩定性**：針對 Mac 與 Windows 系統差異進行優化，使用自定義 Label 元件破解 Mac 系統按鈕顏色限制，確保跨平台操作之一致性。
 
 **三、執行結果過程與圖檔**
+執行過程影片：https://drive.google.com/file/d/1iOmb_4P8hdfWzZp_Hftx29ZLKAE8T43m/view?usp=sharing
 <img width="600" height="400" alt="travel" src="https://github.com/user-attachments/assets/47b70bef-6bd1-44a6-b993-56a4c08fabdf" />
 
 <img width="600" height="400" alt="pet" src="https://github.com/user-attachments/assets/29e89e44-1120-4bb8-b83d-f9a335e08374" />
